@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="product">
+        <h3>Products</h3>
+        
+        <div id="productlist">
+         <div class="productitem" id="pd1">
+            <span>Product-1</span>
+            <span>100</span>
+            <button  class="plusbutton" onclick="AddToCart('Product-1',100);plusEvent('Product-1')">+</button>
+            <span class="qtyn">0</span>
+            <button  class="minusbutton" onclick="removefromcart('Product-1');minusEvent('Product-1')">-</button>
+         </div>
+         <div class="productitem" id="pd2">
+            <span>Product-2</span>
+            <span>200</span>
+            <button  class="plusbutton" onclick="AddToCart('Product-2',200);plusEvent('Product-2')">+</button>
+            <span class="qtyn">0</span>
+            <button  class="minusbutton" onclick="removefromcart('Product-2');minusEvent('Product-2')">-</button>
+         </div>
+         <div class="productitem" id="pd3">
+            <span>Product-3</span>
+            <span>300</span>
+            <button class="plusbutton" onclick="AddToCart('Product-3',300);plusEvent('Product-3')">+</button>
+            <span class="qtyn">0</span>
+            <button  class="minusbutton" onclick="removefromcart('Product-3');minusEvent('Product-3')">-</button>
+         </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="cart">
+        <h3>Cart</h3>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
